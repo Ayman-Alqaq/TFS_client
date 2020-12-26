@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chayenne" nameDescription="Chayenne" race="blood" experience="0" speed="300" manacost="0">
+	<health now="200000" max="200000" />
+	<look type="155" head="78" body="0" legs="105" feet="99" addons="0" corpse="0" />
+	<targetchange interval="2000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="15" defense="20">
+		<defense name="healing" interval="1000" chance="1" min="0" max="10000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="healing" interval="3500" chance="30" min="1000" max="1000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="10">
+		<voice sentence="We don't stop playing because we grow old, we grow old because we stop playing." />
+		<voice sentence="Oooh dang, he's hot *-*" />
+		<voice sentence="Oh came on, take it easy." />
+		<voice sentence="Work hard, play harder!" />
+		<voice sentence="They are doing WHAT with my quest?!" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

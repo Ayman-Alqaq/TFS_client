@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Ghastly Dragon" nameDescription="a ghastly dragon" race="undead" experience="0" speed="320">
+	<health now="7800" max="7800" />
+	<look type="351" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="35" defense="35" />
+	<voices interval="5000" chance="10">
+		<voice sentence="EMBRACE MY GIFTS!" yell="1" />
+		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elder Druid" nameDescription="an elder druid" race="blood" experience="0" speed="304" manacost="900">
+	<health now="180" max="180"/>
+	<look type="144" head="0" body="114" legs="132" feet="114" addons="3" corpse="5995"/>
+	<targetchange interval="4000" chance="50"/>
+	<strategy attack="10" defense="90"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+		<event name="curar"/>
+	</script>
+	<attacks>
+	</attacks>
+	<defenses armor="20" defense="14">
+	<defense name="healing" interval="2000" chance="12" min="475" max="950">
+	  <attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="4000" chance="300">
+		<voice sentence="Are you injured?" />
+		<voice sentence="Exura Sio!" />
+		<voice sentence="I will protect you!" />
+	</voices>
+	<loot capacity="1900">
+	</loot>
+</monster>

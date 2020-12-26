@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Ferumbras" nameDescription="Ferumbras" race="venom" experience="0" speed="320">
+	<health now="12000" max="12000" />
+	<look type="229" corpse="0" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="200" defense="240">
+		<defense name="healing" interval="2000" chance="10" min="900" max="1500">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="speed" interval="3000" chance="30" speedchange="360" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="20">
+		<voice sentence="NOONE WILL STOP ME THIS TIME!" yell="1" />
+		<voice sentence="THE POWER IS MINE!" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

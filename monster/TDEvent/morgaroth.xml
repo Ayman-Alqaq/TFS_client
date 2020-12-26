@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Morgaroth" nameDescription="Morgaroth" race="undead" experience="0" speed="400">
+	<health now="12000" max="12000" />
+	<look type="12" head="0" body="94" legs="79" feet="79" corpse="0" />
+	<targetchange interval="10000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="200" defense="240">
+		<defense name="healing" interval="3000" chance="35" min="300" max="800">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="4000" chance="80" speedchange="440" duration="6000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="30">
+		<voice sentence="I AM MORGAROTH, LORD OF THE TRIANGLE... AND YOU ARE LOST!" yell="1" />
+		<voice sentence="MY SEED IS FEAR AND MY HARVEST ARE YOUR SOULS!" yell="1" />
+		<voice sentence="ZATHROTH! LOOK AT THE DESTRUCTION I AM CAUSING IN YOUR NAME!" yell="1" />
+		<voice sentence="THE TRIANGLE OF TERROR WILL RISE!" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

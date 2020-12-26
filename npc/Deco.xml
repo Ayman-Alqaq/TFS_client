@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Deco Rator" script="default.lua" walkinterval="2000">
+	<health now="100" max="100" />
+	<look type="143" head="78" body="101" legs="120" feet="94" addons="1" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+		Coconut, 2678, 100;
+		Blood Herb, 2798, 2000;" />
+		<parameter key="shop_sellable" value="
+		Coconut, 2678, 5;
+		Blood Herb, 2798, 50;"/>
+	</parameters>
+</npc>

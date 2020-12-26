@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Undead Dragon" nameDescription="an undead dragon" race="undead" experience="0" speed="250">
+	<health now="8350" max="8350" />
+	<look type="231" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="15" min="200" max="250">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="FEEEED MY ETERNAL HUNGER!" yell="1" />
+		<voice sentence="I SENSE LIFE" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

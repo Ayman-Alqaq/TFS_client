@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Demon" nameDescription="a demon" race="fire" experience="0" speed="280">
+	<health now="8200" max="8200" />
+	<look type="35" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+		<flags>
+				<flag summonable="0"/>
+				<flag attackable="1"/>
+				<flag hostile="1"/>
+				<flag illusionable="1"/>
+				<flag convinceable="0"/>
+				<flag pushable="0"/>
+				<flag canpushitems="0"/>
+				<flag canpushcreatures="0"/>
+				<flag targetdistance="1"/>
+				<flag staticattack="90"/>
+				<flag runonhealth="0"/>
+		</flags>
+	<defenses armor="55" defense="55">
+		<defense name="healing" interval="2000" chance="15" min="180" max="250">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="320" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30" />
+		<element deathPercent="30" />
+		<element energyPercent="50" />
+		<element earthPercent="40" />
+		<element icePercent="-10" />
+		<element holyPercent="-10" />
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!" />
+		<voice sentence="MUHAHAHAHA!" />
+		<voice sentence="CHAMEK ATH UTHUL ARAK!" />
+		<voice sentence="I SMELL FEEEEAAAAAR!" />
+		<voice sentence="Your resistance is futile!" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

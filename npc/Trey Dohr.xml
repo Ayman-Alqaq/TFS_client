@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Trey Dohr" script="Trey Dohr.lua" walkinterval="4000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="73" />
+  <parameters>
+        <parameter key="message_greet" value="Hello, |PLAYERNAME|. I am a seller of fine items. I can offer you rare items in exchange for {VIP Tokens} . Would you like to {buy} items?"/>
+        <parameter key="message_farewell" value="Good bye!"/>
+        <parameter key="message_walkaway" value="Good bye!" />
+</parameters>
+</npc>

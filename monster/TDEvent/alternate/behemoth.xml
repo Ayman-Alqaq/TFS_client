@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Behemoth" nameDescription="a behemoth" race="blood" experience="0" speed="260">
+	<health now="4000" max="4000" />
+	<look type="55" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="45" defense="45">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="You're so little!" />
+		<voice sentence="Human flesh - delicious!" />
+		<voice sentence="Crush the intruders!" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

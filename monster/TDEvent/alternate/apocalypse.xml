@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Apocalypse" nameDescription="Apocalypse" race="fire" experience="0" speed="380">
+	<health now="80000" max="80000" />
+	<look type="12" head="38" body="114" legs="0" feet="94" corpse="0" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="188" defense="145">
+		<defense name="healing" interval="1000" chance="15" min="1000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="8" speedchange="480" duration="6000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="BOW TO THE POWER OF THE RUTHLESS SEVEN!" yell="1" />
+		<voice sentence="DESTRUCTION!" yell="1" />
+		<voice sentence="CHAOS!" yell="1" />
+		<voice sentence="DEATH TO ALL!" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

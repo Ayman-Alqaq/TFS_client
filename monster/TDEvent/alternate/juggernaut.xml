@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Juggernaut" nameDescription="a juggernaut" race="blood" experience="0" speed="290">
+	<health now="20000" max="20000" />
+	<look type="244" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="60" defense="60">
+		<defense name="speed" interval="2000" chance="15" speedchange="520" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="400" max="900">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="RAAARRR!" />
+		<voice sentence="GRRRRRR!" />
+		<voice sentence="WAHHHH!" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

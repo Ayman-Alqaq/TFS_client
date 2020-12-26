@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Han Gree" script="default.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="133" head="116" body="95" legs="50" feet="132" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			Brown Mushroom,2789,10;"
+			/>
+	</parameters>
+</npc>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
+	<globalevent type="record" name="PlayerRecord" script="record.lua" />
+	<globalevent name="Server Save" time="23:55:00" script="serversave.lua" />
+	<globalevent name="reload items" time="00:01:00" script="items.lua" />
+	<!--globalevent name="npcs" type="startup" script="npcspawn.lua"/-->
+	<!--globalevent name="ServerSave" interval="10800000" script="serversave1.lua" /-->
+	
+	
+	<!-- Custom -->
+	<globalevent type="startup" name="doCheckHouses" script="doCheckHouses.lua" />
+	<globalevent interval="7200000" name="AutoSave" script="autosave.lua"/>
+	
+	<!-- Rent Horses -->
+	<globalevent name="RentedMounts" interval="15000" script="checkMount.lua" />
+
+	<!-- Blooming Griffinclaw -->
+	<globalevent name="GriffinclawFlower" type="startup" script="griffinclawFlower.lua" />
+
+	<!-- World Changes -->
+	<globalevent name="FuryGates" type="startup" script="furygates.lua" />
+	<globalevent name="Yasir" type="startup" script="yasir.lua" />
+	
+	<!-- Spawn -->
+	<globalevent name="RaidSystem" interval="10000" script="raids.lua" />
+	<globalevent name="BossSystem" interval="3600000" script="BossSpawn.lua" />
+	<globalevent type="startup" name="RashidSpawn" script="RashidSpawn.lua" />
+	<globalevent type="startup" name="CilliaSpawn" script="CilliaSpawn.lua" />
+	
+	<!--Clean Map-->
+	<globalevent name="Clean Map" interval="36000000" script="cleanmap.lua" />
+	
+	<!-- Power Gamers -->
+	<!--globalevent name="PowerGamers" interval="60000" script="powergamers.lua"/-->
+	
+	<!--Capture the Flag-->
+	<globalevent name="CTF" interval="7200000" script="ctf.lua" />
+	
+	<globalevent name="mana1" interval="3000" script="magicTiles/magicTiles1.lua" />
+	<globalevent name="mana2" interval="3000" script="magicTiles/magicTiles2.lua" />
+	<globalevent name="mana3" interval="3000" script="magicTiles/magicTiles3.lua" />
+	<globalevent name="mana4" interval="1000" script="magicTiles/magicTiles4.lua" />
+	
+	<!-- Last Man Standing Event: Nevix -->
+	<globalevent name="Last Man Standing" interval="18500000" script="lms.lua"/>
+		
+	<!--ZnoteShop-->
+	<globalevent name="Znote Shop" interval="30000" script="znoteshop.lua"/>
+	
+	<!-- Teleport Summon-->
+	<globalevent name="SummonTeleport" interval="1000" script="summon_teleport.lua"/>
+</globalevents>

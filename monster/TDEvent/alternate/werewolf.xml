@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Werewolf" nameDescription="a werewolf" race="blood" experience="0" speed="200">
+	<health now="1955" max="1955" />
+	<look type="308" corpse="0" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="15" min="120" max="225">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" range="7" speedchange="400" duration="5000">
+			<attribute key="areaEffect" value="purplenote" />
+		</defense>
+	</defenses>
+	<voices interval="5000" chance="10">
+		<voice sentence="BLOOD!" yell="1" />
+		<voice sentence="HRAAAAAAAAAARRRRRR!" yell="1" />
+	</voices>
+	<script>
+		<event name="TWDDeath"/>
+	</script>
+</monster>

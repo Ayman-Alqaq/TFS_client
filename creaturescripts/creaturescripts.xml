@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	<!--Custom -->
+		<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>
+	
+		<event type="death" name="DropMonsterLoot" script="drop_monster_loot.lua" />
+		<event type="modalwindow" name="valorShop" script="valorShopModal.lua"/>
+		<event type="modalwindow" name="valorSale" script="valorSaleModal.lua"/>
+	
+	
+		<!-- Bounty Hunter-->
+		<event type="death" name="bountyKill" script="bountyKill.lua"/>
+	
+		<!--Summon Druid-->
+		<event type="think" name="curar" script="curar.lua"/> 
+		<event type="think" name="curar1" script="curar1.lua"/> 
+		<event type="think" name="curar2" script="curar2.lua"/> 
+	
+		<!-- Rookgaard Cockroach -->
+		<event type="kill" name="TutorialCockroach" script="rookgaard/killCockroach.lua" />
+		<event type="advance" name="AdvanceRookgaard" script="rookgaard/advance.lua" />
+	
+		<!-- Homestone -->
+		<event type="think" name="Homestonefx" script="homestonefx.lua"/>
+	
+		<!--Skill Scroll-->
+		<event type="login" name="skillScrollLogin" script="scrollwindow.lua"/>
+		<event type="modalwindow" name="skillScrollWindow" script="scrollwindow.lua"/>  
+	
+		<!--Capture the Flag-->
+		<event type="death" name="CTF" script="ctf.lua"/>
+	
+		<!-- Tower Defense -->
+		<event type="death" name="TWDDeath" script="TDEvent/twdDeath.lua"/>
+		<event type="preparedeath" name="TWDOnLose" script="TDEvent/twdOnLose.lua"/>
+		<event type="modalwindow" name="TWDBuildWindow" script="TDEvent/twdBuildWindow.lua"/>
+		<event type="modalwindow" name="TWDOtherWindow" script="TDEvent/twdOtherWindow.lua"/>
+		<event type="healthchange" name="TWDHealthChange" script="TDEvent/twdHealthChange.lua"/>
+		
+		<!-- Monster Arena-->
+		<event type="death" name="MonsterArenaDeath" script="monsterArenaDeath.lua"/>
+		<!--<event type="think" name="MonsterArenaThink" script="monsterArenaDeath.lua"/>-->
+		
+		<!-- Auto Loot -->
+		<event type="kill" name="AutoLoot" script="autoloot.lua" />
+		
+		<!-- Modal Window -->
+		<event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />
+
+		<!--Auto Attack-->
+		<event type="login" name="autoAttack" script="autoattack.lua"/>
+		
+		<!--Elemental Resistance-->
+		<event type="healthchange" name="resist" script="resist.lua"/>
+		<!-- End Custom -->
+		
+		<!--event type="healthchange" name="secureMode" script="secureMode.lua"/-->
+		
+		<!-- Absolut and Ciroc -->
+			<!-- Elemental Spheres Quest -->
+	<event type="kill" name="ElementalSpheresOverlords" script="absolut/elemental spheres/OverlordsKill.lua" />
+
+	<!-- Bigfoot Burden Quest -->
+	<event type="kill" name="BigfootBurdenVersperoth" script="absolut/bigfoot burden/VersperothKill.lua" />
+	<event type="kill" name="BigfootBurdenWarzone" script="absolut/bigfoot burden/WarzoneKill.lua" />
+	<event type="kill" name="BigfootBurdenWeeper" script="absolut/bigfoot burden/WeeperKill.lua" />
+	<event type="kill" name="BigfootBurdenWiggler" script="absolut/bigfoot burden/WigglerKill.lua" />
+
+	<!-- Svargrond Arena: Killing a boss -->
+	<event type="kill" name="SvargrondArenaKill" script="absolut/svargrond arena/arena_kill.lua" />
+
+	<!-- The New Frontier Quest -->
+	<event type="kill" name="NewFrontierShardOfCorruption" script="absolut/the new frontier/ShardOfCorruption.lua" />
+	<event type="kill" name="NewFrontierTirecz" script="absolut/the new frontier/TireczKill.lua" />
+
+	<!-- In Service Of Yalahar Quest -->
+	<event type="kill" name="ServiceOfYalaharAzerus" script="absolut/in service of yalahar/AzerusKill.lua" />
+	<event type="kill" name="ServiceOfYalaharDiseasedTrio" script="absolut/in service of yalahar/DiseasedTrioKill.lua" />
+	<event type="kill" name="ServiceOfYalaharQuaraLeaders" script="absolut/in service of yalahar/QuaraLeadersKill.lua" />
+
+	<!-- Inquisition Quest -->
+	<event type="kill" name="InquisitionBosses" script="absolut/inquisition/inquisitionQuestBosses.lua" />
+	<event type="kill" name="InquisitionUngreez" script="absolut/inquisition/inquisitionQuestUngreez.lua" />
+
+	<!-- Killing In The Name Of Quest -->
+	<event type="kill" name="KITNO" script="custom/KITNO_kills.lua" />
+
+	<!-- The Masters Voice Quest -->
+	<event type="kill" name="MastersVoiceServants" script="absolut/their master's voice/ServantsKill.lua" />
+
+	<!-- Thieves Guild Quest -->
+	<event type="kill" name="ThievesGuildNomad" script="absolut/nomad.lua" />
+
+	<!-- Secret Service Quest -->
+	<event type="kill" name="SecretServiceBlackKnight" script="absolut/blackKnight.lua" />
+
+	<!-- Wrath of the Emperor Quest -->
+	<event type="kill" name="WotELizardMagistratus" script="absolut/wrath of the emperor/lizardmagistratus.lua" />
+	<event type="kill" name="WotELizardNoble" script="absolut/wrath of the emperor/lizardnoble.lua" />
+	<event type="kill" name="WotEKeeper" script="absolut/wrath of the emperor/keeper.lua" />
+	<event type="kill" name="WotEBosses" script="absolut/wrath of the emperor/bosses.lua" />
+	<event type="kill" name="WotEZalamon" script="absolut/wrath of the emperor/zalamon.lua" />
+
+	<!-- Pythius The Rotten (Firewalker Boots Quest) -->
+	<event type="kill" name="PythiusTheRotten" script="absolut/PythiusTheRotten.lua" />
+
+	<!-- Bosses -->
+	<event type="death" name="wyda" script="absolut/wyda.lua"/>
+	<event type="death" name="white deer" script="absolut/white deer.lua"/>
+	<event type="death" name="white deer2" script="absolut/white deer2.lua"/>
+	<event type="death" name="northern pike" script="absolut/northern pike.lua"/>
+	<event type="think" name="Gaz'haragoth heal" script="absolut/gaz'haragoth heal.lua"/>
+	<event type="think" name="omrafir explode" script="absolut/omrafir explode.lua"/>
+	<event type="think" name="shlorg tp" script="absolut/shlorg tp.lua"/>
+	<event type="think" name="welter egg" script="absolut/welter egg.lua"/>
+	<event type="think" name="the pale count tp" script="absolut/the pale count tp.lua"/>
+	<event type="think" name="zavarash hide" script="absolut/zavarash hide.lua"/>
+	<event type="preparedeath" name="monster heal" script="absolut/monster heal.lua"/>
+	<event type="preparedeath" name="monster heal2" script="absolut/monster heal2.lua"/>
+
+		<!-- End -->
+	<event type="login" name="PlayerLogin" script="login.lua" />
+	<event type="logout" name="PlayerLogout" script="logout.lua" />
+	<event type="login" name="FirstItems" script="firstitems.lua" />
+	<event type="login" name="OfflineTraining" script="offlinetraining.lua" />
+	<event type="login" name="RegenerateStamina" script="regeneratestamina.lua" />
+	<event type="death" name="PlayerDeath" script="playerdeath.lua" />
+	<event type="death" name="DropLoot" script="droploot.lua" />
+	<event type="advance" name="AdvanceSave" script="advance_save.lua" />
+	<event type="extendedopcode" name="ExtendedOpcode" script="extendedopcode.lua" />
+	<event type="advance" name="onadvance_reward" script="onadvance_reward.lua"/>
+	<event type="login" name="onadv_register" script="onadvance_reward.lua"/>
+</creaturescripts>
